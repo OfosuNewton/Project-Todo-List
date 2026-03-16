@@ -1,20 +1,128 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Restuarant Page</title>
-    </head>
-    <body>
-        <header>
-            <nav id="menu">
-                <button class="btn" id="home-btn">Home</button>
-                <button class="btn" id="menu-btn">Menu</button>
-                <button class="btn" id="about-btn">About</button>
-            </nav>
-        </header>
-        <div id="content">
-          
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheckDone List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo"></div>
+            <ul class="menu">
+                <li class="projects">
+                    <!-- <a href="" > -->
+                        <i class=""fas fa-tachometer-alt></i>
+                        <span id="projectid" class="all-todos">All Todos</span>
+                    <!-- </a> -->
+                </li>
+                <div id="projects">
+                        <i class=""fas fa-tachometer-alt></i>
+                        <span>Projects</span>
+                </div>
+                <li class="add-project" >
+                    <button data-open-modal id="add-project">Add Project <i class="fa-solid fa-plus"></i></button>
+                </li>
+            </ul>
+        
+    </div>
+    <!-- main-content -->
+    <div class="main--content">
+        <div class="header">
+            CheckDone
         </div>
-    </body>
+        <div class="content-container">
+            <span class="descriptor">Today</span>
+        <div class="content"></div>
+        <!-- project dialog -->
+            <dialog data-modal id="modal" id="dialog">
+                <form action="" method="dialog">
+                    <div class="label-box">
+                        <label for="title">Title:</label>
+                        <input type="text" id="title" class="input-element" name="title" placeholder="Give your project a title">
+                    </div>
+                    <div class="tutorial-txt">
+                        Hey let's create a project list for all our Todos..Remember creating these projects makes filetering easy!!!😉😉😉
+                        You can easily filter all Todos based on their appended projects, isn't it interesting? 
+                    </div>
+                    <div class="functionality-btn-cont">
+                        <button class= "perform-click-operation">Add <i class="fa-solid fa-plus"></i></button>
+                         <button formmethod="dialog" class="perform-click-operation">Cancel <i class="fa-solid fa-circle-xmark"></i></button>
+                       
+                    </div>
+                </form>
+            </dialog>
+            <button id="createNewTodo" data-open-modal>New Todo <i class="fa-solid fa-plus"></i></button>
+<!-- todo dialog -->
+             <dialog data-Todo-modal id="dialog">
+                <form action="" method="dialog">
+                    <label class="card-header">Create a new Todo📖</label>
+                    <div class="label-box">
+                        <label for="title" class="title">Title:</label>
+                        <input type="text" id="todo-title" class="input-element" name="title" placeholder="Project Title">
+                    </div>
+                    <div class="label-box">
+                        <label for="title">Description:</label>
+                        <input type="textarea" id="description" class="input-element" placeholder="Description">
+                    </div>
+                    <div class="label-box">
+                        <label for="title">Due date:</label>
+                        <input type="date" id="date" class="input-element">
+                    </div>
+                    <div class="label-box">
+                        <label for="title">Priority:</label>
+                        <select name="" id="priority" required class="input-element">
+                            <option value="high">High</option>
+                            <option value="moderate">moderate</option>
+                            <option value="low">low</option>
+                        </select>
+                    </div>
+                    <div class="label-box">
+                        <label for="title">Add To:</label>
+                        <select name="" id="choose-project" class="input-element" required>
+                            
+                        </select>
+                    </div>
+                    <div class="functionality-btn-cont">
+                        <button formmethod="dialog" class="perform-click-operation">Cancel <i class="fa-solid fa-circle-xmark"></i></button>
+                         <button class= "add-new-todo-btn">Add <i class="fa-solid fa-plus"></i></button>
+                    </div>
+                </form>
+            </dialog>
+            <!-- Edit staff -->
+             <dialog data-edit-modal id="dialog">
+                <form action="" method="dialog" >
+                    <label class="update-title">Update Todo📝</label>
+                      <div class="label-box">
+                        <label for="title">Title:</label>
+                        <input type="text" id="edit-todo-title" class="input-element" name="title" placeholder="Project Title">
+                    </div>
+                    <div class="label-box">
+                        <label for="title">Description:</label>
+                        <input type="text" id="edit-todo-description" class="input-element"  placeholder="Description">
+                    </div>
+                    <div class="label-box">
+                        <label for="title">Due date:</label>
+                        <input type="date" id="edit-todo-date" class="input-element">
+                    </div>
+                    <div class="label-box">
+                        <label for="title">Priority:</label>
+                        <select name="" id="edit-todo-priority" class="input-element">
+                            <option value="high">High</option>
+                            <option value="moderate">moderate</option>
+                            <option value="low">low</option>
+                        </select>
+                    </div>
+                    
+                    <div class="functionality-btn-cont">
+                        <button formmethod="dialog" class="perform-click-operation">Cancel <i class="fa-solid fa-circle-xmark"></i></button>
+                        <button formmethod="dialog" class="save-btn" id="update" data-Todo-id>Update <i class="fa-solid fa-file-pen"></i></button>
+                        
+                    </div>
+                </form>
+            </dialog>
+        </div>
+    </div>
+</body>
 </html>

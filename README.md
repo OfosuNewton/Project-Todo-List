@@ -1,74 +1,129 @@
-# 🍽️Project-Restuarant-Page
-This project is an intermediate-level exercise from The Odin Project curriculum. The goal was to build a multi-tab restaurant website using modern JavaScript, leveraging Webpack to bundle all assets.
+📝 To-Do List App
 
-🌟 Features
-Multi-Tab Interface: Navigate between different sections (e.g., Home, Menu, About) without a full page reload.
+A modern To-Do List web application built as part of the Intermediate JavaScript section of The Odin Project curriculum.
+The application allows users to create, organize, and manage their tasks efficiently with a clean and intuitive interface.
 
-Dynamic Content Loading: All main content is dynamically loaded and rendered using JavaScript, replacing the content area when a new tab is selected.
 
-Modular Code Structure: The project is organized into separate JavaScript modules for different parts of the page (e.g., header, content area, specific tabs).
+📸 Preview
 
-🛠️ Technologies Used
+![alt text](image.png)
+
+✨ Features
+
+✅ Create new tasks
+
+📝 Add descriptions and additional details to tasks
+
+📅 Organize tasks by projects
+
+🔄 Edit existing tasks
+
+❌ Delete tasks
+
+📂 Dynamic DOM rendering
+
+💾 Persistent storage using localStorage
+
+📱 Responsive design for different screen sizes
+
+🛠️ Built With
+
 HTML5
 
 CSS3
 
-JavaScript (ES6+)
+JavaScript (ES6 Modules)
 
-Webpack: Used to bundle JavaScript, CSS, and assets.
+Webpack
 
-webpack-dev-server: For local development and live reloading.
+Local Storage API
 
-NPM: Used for dependency management and running scripts.
+📚 What I Learned
 
-🚀 Getting Started
-To view and run this project locally, follow these steps:
+This project helped strengthen my understanding of:
 
-Clone the repository:
+Modular JavaScript architecture
 
-Bash
+Using ES6 modules for code organization
 
-git clone []
-cd restaurant-page-project
-Install dependencies:
+Managing application state
 
-Bash
+DOM manipulation and event handling
+
+Using Webpack for bundling projects
+
+Persisting data using localStorage
+
+📂 Project Structure
+todo-list/
+│
+├── dist/               # Production build
+├── src/                # Source files
+|   ├── assets / images/logo.png
+│   ├── modules/
+│   ├── styles/
+│   ├── index.js
+|   ├── CreateTodo.js
+|   ├── delete_Todo.js
+|   ├── edit.js
+|   ├── newprojectFactory.js
+|   ├── ToggleComplete.js
+|   ├── uiController.js
+│   └── template.html
+│
+├── .gitignore
+├── package.json
+├── webpack.config.js
+└── README.md
+⚙️ Installation & Setup
+
+Clone the repository
+
+git clone https://github.com/ofosuNewton/todo-list.git
+
+Navigate into the project folder
+
+cd todo-list
+
+Install dependencies
 
 npm install
-Run the development server:
 
-Bash
+Run the development server
 
-npm run start
-The site will typically open in your browser at http://localhost:8080/.
+npm run dev
 
-Build for production (optional):
-
-Bash
+Build for production
 
 npm run build
-This will generate the optimized files in the /dist directory.
+🌍 Deployment
 
-📝 Project Structure
-The key files and directories are organized as follows:
+This project is deployed using GitHub via GitHub Pages.
 
-restaurant-page-project/
-├── dist/                     # Webpack's output directory (bundled files)
-├── node_modules/             # Installed dependencies
-├── src/
-│   ├── modules/              # Core JavaScript modules (e.g., page content, tabs)
-│   │   ├── home.js
-│   │   ├── menu.js
-│   │   ├── contact.js
-│   ├── style.css             # Main stylesheet
-│   ├── index.js              # Entry point for Webpack
-│   └── index.html            # Template HTML file
-├── package.json              # Project dependencies and scripts
-├── webpack.config.js         # Webpack configuration file
-└── README.md
-🚧 Future Improvements (Known Issues & To-Do)
-Responsiveness: (Important Reminder!) The current design is primarily focused on desktop views and lacks full responsiveness for smaller screens (mobiles/tablets). This will be addressed in a future iteration.
+To deploy:
 
-Error Handling: Implement better error handling for content loading.
+npm run build
 
-Accessibility: Improve ARIA attributes and keyboard navigation.
+Then push the dist folder to the gh-pages branch.
+
+🎯 Future Improvements
+
+Due date reminders
+
+Drag-and-drop task organization
+
+Dark mode
+
+Cloud syncing
+
+👨‍💻 Author
+
+TeslA
+
+GitHub: https://github.com/yourusername
+
+📜 License
+
+This project is open-source and available under the MIT License.
+
+
