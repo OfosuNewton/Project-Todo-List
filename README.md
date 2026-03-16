@@ -7,6 +7,7 @@ The application allows users to create, organize, and manage their tasks efficie
 📸 Preview
 
 ![alt text](image.png)
+click on this link for live preview: https://ofosunewton.github.io/Project-Todo-List/
 
 ✨ Features
 
@@ -120,7 +121,7 @@ Cloud syncing
 
 TeslA
 
-GitHub: https://github.com/yourusername
+GitHub: https://github.com/ofosuNewton
 
 📜 License
 
